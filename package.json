@@ -1,0 +1,23 @@
+{
+  "name": "field-validation",
+  "version": "0.0.1",
+  "description": "validation for fields",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadimkaKharitonenko/field-validation.git"
+  },
+  "keywords": [
+    "validation",
+    "form"
+  ],
+  "author": "Vadim Kharitonenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vadimkaKharitonenko/field-validation/issues"
+  },
+  "homepage": "https://github.com/vadimkaKharitonenko/field-validation#readme"
+}
