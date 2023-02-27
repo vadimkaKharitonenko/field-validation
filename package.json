@@ -1,6 +1,6 @@
 {
   "name": "field-validation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "validation for fields",
   "main": "index.js",
   "scripts": {
