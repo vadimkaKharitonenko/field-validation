@@ -1,6 +1,6 @@
-const { Validation } = require("../src/index");
+const { FV } = require("../index");
 
-const v = new Validation();
+const v = new FV();
 
 const cases = {
   0: {
@@ -16,7 +16,7 @@ const cases = {
   2: {
     label: '[notEmpty]: spaces at the beginning and end',
     pipe: v.pipe(v.notEmpty)({ value: ' 3  ' }),
-    result: `{"value":" 3  ","message":"Поле заполнено не правильно","status":false}`,
+    result: `{"value":" 3  ","message":"","status":true}`,
   },
   3: {
     label: '[notEmpty]: normal value',

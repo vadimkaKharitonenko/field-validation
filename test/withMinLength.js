@@ -1,6 +1,6 @@
-const { Validation } = require("../src/index");
+const { FV } = require("../index");
 
-const v = new Validation({ MIN_LENGTH: 30 });
+const v = new FV({ MIN_LENGTH: 30 });
 
 const cases = {
   0: {

@@ -1,6 +1,6 @@
-const { Validation } = require("../src/index");
+const { FV } = require("../index");
 
-const v = new Validation({ EMAIL_DOMAINS: ['@gmail.com', '@yandex.ru'] });
+const v = new FV({ EMAIL_DOMAINS: ['@gmail.com', '@yandex.ru'] });
 
 const cases = {
   0: {

@@ -1,3 +1,3 @@
 const { Validation } = require("./src");
 
-exports.fv = Validation;
+exports.FV = Validation;
