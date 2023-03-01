@@ -4,19 +4,19 @@ const v = new Validation({ MAX_LENGTH: 30 });
 
 const cases = {
   0: {
-    label: '[withMaxLength]: max length > MAX_LENGTH',
+    label: '[withMaxLength]: length > MAX_LENGTH',
     pipe: v.pipe(v.withMaxLength)({ value: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' }),
-    result: `{"value":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.","message":"Максимальное количество символов 50","status":false}`,
+    result: `{"value":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.","message":"Максимальное количество символов 30","status":false}`,
   },
   1: {
-    label: '[withMaxLength]: max length < MAX_LENGTH',
+    label: '[withMaxLength]: length < MAX_LENGTH',
     pipe: v.pipe(v.withMaxLength)({ value: 'Lorem Ipsum is' }),
     result: `{"value":"Lorem Ipsum is","message":"","status":true}`,
   },
   2: {
-    label: '[withMaxLength]: max length === MAX_LENGTH',
-    pipe: v.pipe(v.withMaxLength)({ value: 'Lorem Ipsum is' }),
-    result: `{"value":"Lorem Ipsum is","message":"","status":true}`,
+    label: '[withMaxLength]: length === MAX_LENGTH',
+    pipe: v.pipe(v.withMaxLength)({ value: 'Lorem Ipsum isLorem Ipsum isLo' }),
+    result: `{"value":"Lorem Ipsum isLorem Ipsum isLo","message":"","status":true}`,
   },
 };
 

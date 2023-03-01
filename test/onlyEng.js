@@ -26,6 +26,7 @@ const run = () => {
       console.log("\x1b[32m", `PASS: ${cases[key].label}`);
     } else {
       console.log("\x1b[31m", `FAILED: ${cases[key].label}`);
+      console.log(JSON.stringify(cases[key].pipe));
     }
   }
 }
