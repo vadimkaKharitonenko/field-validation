@@ -1,6 +1,2 @@
-// for development
-// const { Validation } = require("./src");
-// exports.FV = Validation;
-
-const { Validation } = require("./dist/main");
+const { Validation } = require("./src");
 exports.FV = Validation;
